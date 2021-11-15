@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get "/posts" => "posts#index"
-  get "/posts/:id" => "posts#index"
+  get "/posts" => "posts#get_posts"
+  resources :posts
 end
